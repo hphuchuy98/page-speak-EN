@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="./assets/fontawesome-free-6.3.0-web/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="/assets/css/base_home.css">
-    <link rel="stylesheet" href="/assets/css/main_home.css">
-    <link rel="stylesheet" href="/assets/css/base_speak.css">
-    <link rel="stylesheet" href="/assets/css/style_speak.css">
+    <link rel="stylesheet" href="./assets/css/base_home.css">
+    <link rel="stylesheet" href="./assets/css/main_home.css">
+    <link rel="stylesheet" href="./assets/css/base_speak.css">
+    <link rel="stylesheet" href="./assets/css/style_speak.css">
 </head>
 <body>
     <div class="home">
@@ -43,15 +43,16 @@
                 </li>
 
                 <li class="navbar__list-item">
-                    <a class="bold" href="#">
+                    <a class=" bold" href="#">
                         <span class="navbar__list-text">ONLINE</span>
                         <i class="fa-solid fa-angle-down navbar__list-icon"></i>
                     </a>
-
-                    <ul class="navbar__list-sub">
-                        <li><a href="#">PHRASEBOOK AT WORK</a></li>
-                        <li><a href="#">GRAMMAR BOOST</a></li>
-                    </ul>
+                    <div class="navbar__list-sub">
+                        <ul class="navbar__list-sub-item">
+                            <li><a  href="#">PHRASEBOOK AT WORK</a></li>
+                            <li><a href="#">GRAMMAR BOOST</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li class="navbar__list-item">
@@ -59,15 +60,16 @@
                         <span class="navbar__list-text">OFFLINE</span>
                         <i class="fa-solid fa-angle-down navbar__list-icon"></i>
                     </a>
-
-                    <ul class="navbar__list-sub">
-                        <li><a href="#">COACH 1:1</a></li>
-                        <li><a href="#">PAPAYA - NGỮ PHÁP ĐU ĐỦ</a></li>
-                        <li><a href="#">PRACTICAL PRONUNCIATION - PHÁT ÂM</a></li>
-                        <li><a href="#">ERE - TĂNG CƯỜNG PHẢN XẠ</a></li>
-                        <li><a href="#">ELEVATOR PITCH</a></li>
-                        <li><a href="#">THE SPEAKING LAB (TSLAB) - TIẾNG ANH HÙNG BIỆN</a></li>
-                    </ul>
+                    <div class="navbar__list-sub">
+                        <ul class="navbar__list-sub-item">
+                            <li><a href="#">COACH 1:1</a></li>
+                            <li><a href="#">PAPAYA - NGỮ PHÁP ĐU ĐỦ</a></li>
+                            <li><a href="#">PRACTICAL PRONUNCIATION - PHÁT ÂM</a></li>
+                            <li><a href="#">ERE - TĂNG CƯỜNG PHẢN XẠ</a></li>
+                            <li><a href="#">ELEVATOR PITCH</a></li>
+                            <li><a href="#">THE SPEAKING LAB (TSLAB) - TIẾNG ANH HÙNG BIỆN</a></li>
+                        </ul>
+                    </div>                  
                 </li>
 
                 <li class="navbar__list-item">
@@ -76,10 +78,12 @@
                         <i class="fa-solid fa-angle-down navbar__list-icon"></i>
                     </a>
 
-                    <ul class="navbar__list-sub">
-                        <li><a href="#">Methodology Vn</a></li>
-                        <li><a href="#">Methodology En</a></li>
-                    </ul>
+                    <div class="navbar__list-sub">
+                        <ul class="navbar__list-sub-item">
+                            <li><a href="#">Methodology Vn</a></li>
+                            <li><a href="#">Methodology En</a></li>
+                        </ul>
+                    </div>
                 </li>
 
                 <li class="navbar__list-item">
@@ -103,6 +107,43 @@
             </ul>
         </nav>
         <!---------- End Header ----------->
+
+        <!-- Title -->
+        <div class="title">
+            <div class="title__item">
+                <div class="title__item-left">
+                    <p>Top Naviagation</p>
+                    <span>Example 2.0</span>
+                </div>
+
+                <div class="title__item-right">
+                    <ul class="title__item-right-arrow">
+                        <li>
+                            <a href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <span>Home</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Layout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-angle-right"></i>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span>Top Navigation</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
         <!-- content -->
         <div class="content">
@@ -198,9 +239,15 @@
                             </div>
         
                             <div class="container-main-center-img">
-                                <div class="container-center-img">
-                                    <img class="container-img-center" src="./assets/images/1P_01_i1_im.png" />
+                                <div class="container-main-center-img-item">
+                                    <div class="container-center-tooltip">
+                                        với lại
+                                    </div>
+                                    <div class="container-center-img">
+                                        <img class="container-img-center" src="./assets/images/1P_01_i1_im.png" />
+                                    </div>
                                 </div>
+                  
                             </div>
         
                             <div class="container-main-center-right">
